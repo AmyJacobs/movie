@@ -5,26 +5,25 @@ function Movie(title, time, age, price) {
   this.price = price;
 }
 
-// Movie.prototype.type = function() {
-//   if (age < 18) {
-//     return "Child";
-//   } else if (age > 65) {
-//     return "Senior";
-//   } else {
-//     return "Adult";
-//   }
-// }
+Movie.prototype.type = function() {
+  if (age < 18) {
+    return "Child";
+  } else if (age > 65) {
+    return "Senior";
+  } else {
+    return "Adult";
+  }
+}
 
 Movie.prototype.priceCalc = function() {
-  if (Movie.age < 18) {
+  if (this.age < 18) {
     price = 15;
-  } else if (Movie.age > 65) {
+  } else if (this.age > 65) {
     price = 10;
   } else {
     price = 20;
   }
-
-  if (time === "8AM-2PM") {
+  if (this.time === "Matinee") {
     price -= 5;
   }
   return price;
@@ -45,7 +44,7 @@ $(document).ready(function() {
 
 
     $(".title-output").text(myMovie.title);
-    $(".age-output").text(myMovie.age);
+    $(".age-output").text(myMovie.type());
     $(".time-output").text(myMovie.time);
     $(".price-output").text(myMovie.priceCalc(price));
 
