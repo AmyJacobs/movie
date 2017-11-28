@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fill in the blanks to write your story!</h1>
+      <div id="blanks">
+        <form>
+          <strong>Select movie title:</strong>
+          <select class="form-control" id="title">
+            <option>Justice League</option>
+            <option>Coco</option>
+            <option>Thor: Ragnarok</option>
+            <option>Lady Bird</option>
+          </select>
+          <strong>Select movie time:</strong>
+          <select class="form-control" id="time">
+            <option>8AM-2PM</option>
+            <option>2PM-12AM</option>
+          </select>
+          <div class="form-group">
+            <label for="age">Enter your age:</label>
+            <input id="age" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Calculate ticket price</button>
+        </form>
+      </div>
+
+      <div id="output">
+        <h1>Tickets</h1>
+        <p><strong> Movie:</strong> <span class="title-output"></span></p>
+        <p><strong> Ticket type:</strong> <span class="age-output"></span></p>
+        <p><strong> Time:</strong> <span class="time-output"></span></p>
+        <p><strong> Price:</strong> $<span class="price-output"></span>.00</p>
+      </div>
+    </div>
+  </body>
+</html>
