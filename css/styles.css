@@ -1,3 +1,27 @@
+body {
+  background-image: url("https://www.lafilm.edu/wp-content/uploads/2016/10/cinema-wallpaper-14.jpg");;
+  color:white;
+}
+
 #output {
+  margin:auto;
+  box-shadow: 0px 0px 20px #fff;
+  color: black;
+  font-size:14px;
+  background-image: url("https://cdn.pixabay.com/photo/2014/04/03/00/31/film-strip-308572_1280.png");
+  background-size: auto 100%;
+  background-repeat:no-repeat;
   display:none;
+  padding-left:45px;
+  padding-bottom:13px;
+  background-color: #fff3cc;
+  width:229px;
+}
+
+#out-title {
+  margin-bottom:-13px;
+}
+
+.btn {
+  color: black;
 }
